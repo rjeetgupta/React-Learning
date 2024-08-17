@@ -7,7 +7,8 @@ function App() {
   // before using hooks you will need to be imported first then use
   
   // [It takes two value first is 0 index value, second one is function]
-  let [counter, setCounter] = useState(15) // in the curly braces of useState, value can be anything like number, string, object
+  let [counter, setCounter] = useState(15)
+  // in the curly braces of useState, value can be anything like number, string, object
   
   // let counter = 15;
 
@@ -27,12 +28,12 @@ function App() {
     <>
       <h1>Chai aur react </h1>
       <h3>counter : {counter} </h3>
-      <button onClick={addValue}> Add value {counter}</button>
+      <button onClick={addValue}> Add value : {counter}</button>
       <br />
       <br />
       <button
       onClick={removeValue}
-      >remove Value {counter}</button>
+      >remove Value : {counter}</button>
       <p>Footer : {counter} </p>
     </>
   )
